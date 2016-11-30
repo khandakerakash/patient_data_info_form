@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,7 @@
     </head>
     <body>
         <!-- Start Patient's data form section -->
-        <section id="patient-data-form">
+        <header id="patient-data-form">
             <div class="container">
                 <div class="row">
 
@@ -43,7 +43,13 @@
                         </div>
                     </div>
                     <!-- End Form header -->
+                </div>
+            </div>
+        </header>
 
+        <section id="form-body">
+            <div class="container">
+                <div class="row">
                     <!-- Start Form Body -->
                     <div class="col-md-12">
                         <div class="form-headings"><!--/ .form-headings -->
@@ -168,6 +174,36 @@
                                     <label for="hba1c" class="control-label">HbA1c (%):</label>
                                     <input type="text" name="hba1c" tabindex="15" class="form-control" required="required">
                                 </div><!--/ 2habf -->
+
+                                <br><br>
+
+                                <div class="form-group">
+                                    <label for="tg" class="control-label">Lipid profile: TG:</label>
+                                    <input type="text" name="tg" tabindex="16" class="form-control" required="required">
+                                    <label for="tg" class="control-label">(mg/dl)</label>
+                                </div><!--/ tg -->
+
+                                <div class="form-group">
+                                    <label for="cholesterole" class="control-label">T.Cholesterole:</label>
+                                    <input type="text" name="cholesterole" tabindex="17" class="form-control" required="required">
+                                    <label for="cholesterole" class="control-label">(mg/dl)</label>
+                                </div><!--/ cholesterole -->
+
+                                <br><br>
+
+                                <div class="form-group">
+                                    <label for="hdl" class="control-label">HDL:</label>
+                                    <input type="text" name="hdl" tabindex="18" class="form-control" required="required">
+                                    <label for="hdl" class="control-label">(mg/dl)</label>
+                                </div><!--/ hdl -->
+
+                                <div class="form-group">
+                                    <label for="ldl" class="control-label">LDL:</label>
+                                    <input type="text" name="ldl" tabindex="19" class="form-control" required="required">
+                                    <label for="ldl" class="control-label">(mg/dl)</label>
+                                </div><!--/ hdl -->
+
+
 
                             </form><!-- / form-tag -->
                         </div><!--/ .form-headings -->

@@ -6,10 +6,12 @@
 
 
 body {
-    background: #FAFAFA; /* alternative color #FFFFFF */
+    background: #FFFFFF; /* alternative color #FAFAFA */
     font-family: 'Open Sans', sans-serif;
     color:#4e4e4e;
     line-height: 22px;
+    margin: 0 !important;;
+    padding: 0 !important;
 }
 
 h1,
@@ -126,8 +128,14 @@ a:focus {
 /* ----------------------------------------- */
 
 /* --- Form header part --- */
+
+#patient-data-form {
+
+}
+
 .form-header {
     padding: 30px 0;
+	
 }
 
 .form-header h2 {
@@ -156,6 +164,12 @@ a:focus {
 
 /* --- Form body part --- */
 
+#form-body  {
+	margin: 20px;
+	padding-left: 10px;
+	border: 1px solid #111!important;
+}
+
 .form-headings span{
     text-decoration: underline;
     margin-left: 15px;
@@ -175,11 +189,14 @@ a:focus {
     margin-left: 35px;
 }
 
-.form-group .form-control {
-    padding: 7px 12px;
+.form-control {
+	padding: 7px 12px;
     box-shadow: none;
-    border-color: #B0CFE0;  /* alternative color #f2f2f2, #2980b9, #2c3e50, #16a085, #27ae60*/
-    margin-left: 15px;
+    border-color: #f2f2f2; /* alternative color #B0CFE0 #f2f2f2, #2980b9, #2c3e50, #16a085, #27ae60*/
+}
+
+.form-group .form-control {
+	margin-left: 15px;
 }
 
 
