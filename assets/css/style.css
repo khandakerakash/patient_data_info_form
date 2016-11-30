@@ -165,9 +165,7 @@ a:focus {
 /* --- Form body part --- */
 
 #form-body  {
-	margin: 20px;
-	padding-left: 10px;
-	border: 1px solid #111!important;
+    margin-bottom: 20px;
 }
 
 .form-headings span{
@@ -192,6 +190,7 @@ a:focus {
 .form-control {
 	padding: 7px 12px;
     box-shadow: none;
+    border-radius: 0 !important;
     border-color: #f2f2f2; /* alternative color #B0CFE0 #f2f2f2, #2980b9, #2c3e50, #16a085, #27ae60*/
 }
 
@@ -207,4 +206,123 @@ a:focus {
 .form-sub-headings {
     margin-left: 35px;
     text-decoration: underline;
+}
+
+.only-bottom input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #111111;
+    width: 400px !important;
+}
+
+button {
+    margin-top: 50px;
+}
+
+
+/* ------------------------------------------- */
+/* 2. Preloader CSS */
+/* ------------------------------------------- */
+#preloader{
+    background-color:#FFFFFF;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*	PRELOADER
+/*------------------------------------------------------------------------*/
+.loader {
+    background: url("../images/preloader/preloader.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+
+}
+
+
+/* ------------------------------------------- */
+/*  SCROLL-UP CSS */
+/* ------------------------------------------- */
+
+a#scrollUp {
+    bottom: 0px;
+    right: 10px;
+    padding: 5px 10px;
+    background: #FE980F;
+    color: #FFF;
+    -webkit-animation: bounce 2s ease infinite;
+    animation: bounce 2s ease infinite;
+}
+
+.cd-top {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgb(254, 152, 15) url(../images/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+}
+.no-touch .cd-top:hover {
+    background-color: #FE980F;
+    opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 20px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+
+/* ------------------------------------------- */
+/*  FOOTER */
+/* ------------------------------------------- */
+
+#footer-section {
+    background: #FAFAFA;
+    margin-top: 50px;
+    padding: 30px;
 }

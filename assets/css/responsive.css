@@ -8,6 +8,7 @@ TOC :
 3. screenwidth less than 991px (Mobile wide/Smaller Tablets)
 4. screenwidth less than 768px (Mobile wide/Smaller Tablets)
 5. screenwidth greater than 480px (Medium Screen Mobile)
+6. screenwidth (XXS) greater than 380px (Medium Screen Mobile)
 
 /* ================================================================== */
 
@@ -21,7 +22,13 @@ TOC :
 @media (min-width: 992px) and (max-width: 1199px) {
   
  /* Make Navigation Toggle on Desktop Hover */
+    .form-group input {
+        width: 130px!important;
+    }
 
+    .only-bottom input {
+        width: 500px!important;
+    }
 }
 
 
@@ -31,6 +38,14 @@ TOC :
 
   .radio label {
     float: left;
+  }
+
+  .form-group input {
+      width: 60px!important;
+  }
+
+  .only-bottom input {
+      width: 300px!important;
   }
 
 }
@@ -71,6 +86,10 @@ TOC :
     margin-left: 0;
   }
 
+  .only-bottom input {
+      width: 716px!important;
+  }
+
 }
 
 /* XS Portrait */
@@ -109,6 +128,9 @@ TOC :
     margin-left: 0;
   }
 
+  .only-bottom input {
+        width: 430px!important;
+  }
 }
 
 /* XXS Portrait */
@@ -149,6 +171,10 @@ TOC :
 
   .form-sub-headings {
     margin-left: 0;
+  }
+
+  .only-bottom input {
+      width: 335px!important;
   }
 
 }
